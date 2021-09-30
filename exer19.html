@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer19</title>
+
+</head>
+<body>
+    <h1>19 - Reescreva o código abaixo como um programa do Javascript.</h1>
+    <img src="./assets/exer19.png" alt="exer19-img">
+    <br>
+
+    <script>
+        let a = Number(prompt(`Insira um valor numérico da variável A: `));
+        let b = Number(prompt(`Insira um valor numérico da variável B: `));
+
+        let troca = a;
+        a = b;
+        b = troca;  
+
+        document.write(`
+        O novo valor de A é: ${a} <br>
+        O novo valor de B é: ${b}
+        `);
+    </script>
+</body>
+</html>

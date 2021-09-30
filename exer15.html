@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer15</title>
+
+</head>
+<body>
+    <h1>15. A Loja FabiDRONES está promovendo uma promoção onde cada drone artesanal custa R$8.190 e pode ser pago em até 15 vezes sem juros. Crie um programa onde o usuário possa informar o valor parcelas que deseja pagar e exiba o valor de cada parcela.</h1>
+    <script>
+        const precoDrone = 8190;
+
+        let quant = Number(prompt("Insira o valor de parcelas"));
+
+        if(quant <= 15){
+            document.write(`
+             <h3> O valor de R$ ${precoDrone} dividido em ${quant} parcelas, custa R$ ${precoDrone / quant} por parcela. </h3> 
+            `);
+        }
+        else{
+            document.write(`
+            <h3> O valor de R$ ${precoDrone} dividido em ${quant} parcelas, custará um valor com juros, pois são mais de 15 parcelas. Entre em contato com a loja para mais informações! </h3> 
+            `);
+        }
+
+       
+    
+    </script>
+</body>
+</html>

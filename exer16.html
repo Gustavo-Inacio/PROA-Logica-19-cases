@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer16</title>
+
+</head>
+<body>
+    <h1>16 - Reescreva o código abaixo como um programa do Javascript.</h1>
+    <br>
+    <img src="./assets/exer16.PNG" alt="exer16-img">
+    <img src="./assets/script16.png" alt="exer16-img">
+    <script>
+        let n1 = Number(prompt("Insira a sua primeira nota"));
+        let n2 = Number(prompt("Insira a sua segunda nota"));
+
+        let media = (n1 + n2)  /2;
+
+        if(media >= 7){
+            document.write(`
+            <h3>Aprovado!!!</h3> <br>
+            Sua média é <h1>${media}</h1>
+            `);
+        }
+        else{
+            document.write(`
+            <h3>Reprovado!!!</h3> <br>
+            Sua média é <h1>${media}</h1>
+            `);
+        }
+    
+    </script>
+</body>
+</html>

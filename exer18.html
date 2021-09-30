@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer18</title>
+
+</head>
+<body>
+    <h1>18- A Wesley Peças Automotivas calcula o preço de venda dos seus produtos com uma margem de aumento x%. Portanto, construa um algoritmo em Javascript que, dados o valor de custo e a margem de aumento, imprima o preço de venda. O usuário deve informar tanto o valor do produto quanto a margem de lucro</h1>
+  
+    <script>
+        let price = Number(prompt(`Insira o valor do produto`));
+        let profit = Number(prompt(`Insira a margem de lucro (em porcentagem. Apenas números)`));
+
+        let add = price * profit / 100;
+
+        document.write(`O preço de venda final o produto com um lucro de ${profit}% é: <b> R$ ${price + add} </b>`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer112</title>
+
+</head>
+<body>
+    <h1>12. Faça um programa que leia 10 números informados pelo usuário e ao final da leitura escrever a soma total dos 10 números lidos.</h1>
+    <br>
+
+    <script>
+        let soma = 0;
+        for(let i = 0; i < 10 ; i++){
+            let temp = Number(prompt(`Insira o ${i + 1}° Número`));
+            if(!isNaN(temp)){
+                soma += temp;
+            }
+            else{
+                i--;
+            }
+        }
+
+        document.write(`
+        A soma dos valores informados: <br>
+        <b>${soma} </b>
+        `);
+    
+    </script>
+</body>
+</html>

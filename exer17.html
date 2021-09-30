@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer17</title>
+
+</head>
+<body>
+    <h1>17 - Descubra a idade do gato em relação a do ser humano. Escreva um programa em Javascript considerando as regras a seguir e calcule a idade de um gato que tem 7 anos humanos. Some 15 anos para o primeiro ano de vida do peludo e 10 para o segundo ano de vida. A partir do terceiro aniversário em diante, acrescente quatro anos.</h1>
+  
+    <script>
+        const idadeHumanInicial = 7;
+        let idade = 0;
+        for(let i = 0; i < idadeHumanInicial; i++){
+            switch(i){
+                case 0: idade += 15;
+                    break;
+                case 1: idade += 10;
+                    break;
+                default: idade += 4;
+            }
+        }
+
+        document.write(`A idade do gato é: ${idade}`);
+    </script>
+</body>
+</html>

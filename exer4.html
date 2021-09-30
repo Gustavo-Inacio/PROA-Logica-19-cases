@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer4</title>
+
+</head>
+<body>
+    <h1>4. Faça um programa que leia 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.</h1>
+    <br>
+
+    <script>
+        let num = [];
+        for(let i = 0; i < 3 ;i++){
+            num[i] = Number(prompt(`Insira o ${i + 1}° Número`));
+        }
+
+        let maior;
+        let segundoMaior;
+        for(let i = 0; i < num.length; i++){
+            if(num[i] > maior || i == 0){
+                maior = num[i];
+            }
+        }
+
+        for(let i = 0; i < num.length; i++){
+            if(num[i] < maior){
+                if(num[i] > segundoMaior || typeof segundoMaior === "undefined") segundoMaior = num[i];
+            }
+            
+        }
+
+        document.write(`
+        Os dois maiores números entre ${num} são <strong>${segundoMaior} e ${maior}</strong>
+        <br>
+        A soma entre eles é de ${maior + segundoMaior}
+        `);
+
+    </script>
+</body>
+</html>

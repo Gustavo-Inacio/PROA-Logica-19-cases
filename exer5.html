@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer5</title>
+
+</head>
+<body>
+    <h1>5. Faça um programa que receba dois números reais e mostre um menu de opções (Subtrair, Somar, Multiplicar e Dividir), realizando a operação de acordo com a opção escolhida no menu e mostrando o resultado.</h1>
+    <br>
+
+    <script>
+        const soma = () => {
+            let num1 = Number(prompt("Certo. \n Agora insira o 1° Número para realizar a operação"));
+            let num2 = Number(prompt(`${num1} + `));
+            alert(`${num1} + ${num2} = ${num1 + num2}`);
+            inicio();
+        }
+        const sub = () => {
+            let num1 = Number(prompt("Certo. \n Agora insira o 1° Número para realizar a operação"));
+            let num2 = Number(prompt(`${num1} - `));
+            alert(`${num1} - ${num2} = ${num1 - num2}`);
+            inicio();
+        }
+        const mult = () => {
+            let num1 = Number(prompt("Certo. \n Agora insira o 1° Número para realizar a operação"));
+            let num2 = Number(prompt(`${num1} * `));
+            alert(`${num1} * ${num2} = ${num1 * num2}`);
+            inicio();
+        }
+        const divid = () => {
+            let num1 = Number(prompt("Certo. \n Agora insira o 1° Número para realizar a operação"));
+            let num2 = Number(prompt(`${num1} / `));
+            alert(`${num1} / ${num2} = ${num1 / num2}`);
+            inicio();
+        }
+
+
+        const inicio = () => {
+            let option = Number(prompt(`Qual opão você deseja? \n 1.)Soma \n 2.)Subtração \n 3.)Multiplicação \n 4.)Dividir`));
+            switch(option){
+                case 1 : soma();
+                    break;
+                case 2 : sub();
+                    break;
+                case 3 : mult();
+                    break;
+                case 4 : divid();
+                    break;
+
+                default: 
+                alert("INSIRA UM VALOR DE 1 A 4!!!");
+                inicio();
+            }
+        }
+
+        inicio();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer3</title>
+
+</head>
+<body>
+    <h1>3. Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.</h1>
+    <br>
+
+    <script>
+        let num = [];
+        for(let i = 0; i < 3 ;i++){
+            num[i] = Number(prompt(`Insira o ${i + 1}° Número`));
+        }
+
+        maior = num[0];
+        for(let i = 0; i < num.length; i++){
+            if(num[i] > maior){
+                maior = num[i]
+            }
+        }
+
+        document.write(`O maior númro entre ${num} é <strong>${maior}</strong>`);
+
+    </script>
+</body>
+</html>

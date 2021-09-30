@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer1</title>
+
+    <style>
+        body{
+            display: flex;
+            flex-flow: row wrap;
+            gap: 50px;
+            justify-content: center;
+        }
+        h1{
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>2. Faça um programa mostrando a tabuada do 5 com os números de 1 a 10.</h1>
+    <br>
+
+    <script>
+        for(let i = 1; i <= 5; i++){
+            document.write(`<div>`);
+            for(let c = 1; c <= 10; c++){
+                document.write(`
+                    ${c} X ${i} = ${i * c}
+                    <br>
+                `);
+            }
+            document.write(`</div>`);
+        }
+    </script>
+</body>
+</html>

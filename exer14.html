@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer14</title>
+
+</head>
+<body>
+    <h1>14. Olhando a imagem, como desenvolver este código em Javascript?</h1>
+    <br>
+    <img src="./assets/exer14.PNG" alt="imagem do codigo em visualg">
+    <img src="./assets/script.png" alt="">
+    <br>
+
+    <script>
+        var prova1;
+        var prova2;
+        var prova3;
+        var prova4;
+
+        prova1 = Number(prompt(`Insira valor da 1° prova`));
+        prova2 = Number(prompt(`Insira valor da 2° prova`));
+        prova3 = Number(prompt(`Insira valor da 3° prova`));
+        prova4 = Number(prompt(`Insira valor da 4° prova`));
+
+        var media = (prova1 + prova2 + prova3 + prova4) / 4;
+
+        document.write(`
+        A sua média é <br>
+        <b>${media} </b>
+        `);
+    
+    </script>
+</body>
+</html>
